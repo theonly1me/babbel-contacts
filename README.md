@@ -5,7 +5,7 @@ This repository contains the solution to the challenge for Babbel. This is a mon
 ## Live Deployments
 
 The server is deployed at: https://babbel-contacts.onrender.com
-The client is deployed at: https://babbel-test.netlify.app/
+The client is deployed at: https://babbel-contacts-client.vercel.app/
 
 ## Usage
 
