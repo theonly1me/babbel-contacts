@@ -6,6 +6,7 @@
   "scripts": {
     "server:dev": "npm run dev --workspace=@babbel-enterprise/server",
     "client:dev": "npm run dev --workspace=@babbel-enterprise/client",
+    "server:start": "npm run start --workspace=@babbel-enterprise/server",
     "clean": "rm -rf node_modules && rm -rf packages/*/node_modules && rm -rf packages/*/dist && rm -rf packages/*/.next",
     "server:test": "npm run test-unit --workspace=@babbel-enterprise/server"
   },
