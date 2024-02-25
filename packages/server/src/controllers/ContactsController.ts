@@ -43,8 +43,6 @@ export async function getOrCreateContactDetails(req: Request, res: Response) {
       .map(n => n.charAt(0).toUpperCase() + n.slice(1))
       .join(' ');
 
-    console.log('THE TITLE CASE NAME IS', titleCaseName);
-
     let contact = await contactsModel.findOneContact(titleCaseName, domain);
 
     let statusCode = 200;
@@ -90,7 +88,6 @@ export async function getOrCreateContactDetails(req: Request, res: Response) {
     if (e instanceof Error) {
       const [title, detail] = e.message.split('. ');
 
-      console.log('The title is', title);
       return res.status(400).json({
         title,
         detail,
